@@ -17,5 +17,9 @@ set +a
 envsubst < ~/dotfiles/kitty/kitty.conf.template > ~/dotfiles/kitty/kitty.conf
 envsubst < ~/dotfiles/dunst/dunstrc.template > ~/dotfiles/dunst/dunstrc
 envsubst < ~/dotfiles/rofi/theme.rasi.template > ~/dotfiles/rofi/theme.rasi 
+envsubst < ~/src/dwm/config.h.template > ~/src/dwm/config.h
 
-echo "Theme $THEME applied"
+cd ~/src/dwm && sudo make clean install
+echo -e "\n\nWill EXIT dwm for changes to take place...\n"
+sleep 2s
+killall dwm
