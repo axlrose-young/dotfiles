@@ -1,7 +1,7 @@
 syntax on
 filetype plugin indent on
 
-set relativenumber
+set relativenumber number
 set showcmd
 set ruler
 

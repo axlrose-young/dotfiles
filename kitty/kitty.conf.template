@@ -41,29 +41,29 @@ scrollback_lines 100000
 # Colors
 #####################
 
-foreground #f0e6d3
-background #000000
+foreground $FOREGROUND
+background $BACKGROUND
 
-selection_foreground #000000
-selection_background #ffffff
+selection_foreground $BACKGROUND
+selection_background $SELECTION_BG
 
-cursor #f0e6d3
-cursor_text_color #000000
+cursor $FOREGROUND
+cursor_text_color $BACKGROUND
 
-color0  #000000
-color1  #e8d9c4
-color2  #aaaaaa
-color3  #999999
-color4  #888888
-color5  #777777
-color6  #666666
-color7  #cccccc
+color0  $BACKGROUND
+color1  $COLOR1
+color2  $COLOR2
+color3  $COLOR3
+color4  $COLOR4
+color5  $COLOR5
+color6  $COLOR6
+color7  $COLOR7
 
-color8  #444444
-color9  #dddddd
-color10 #bbbbbb
-color11 #aaaaaa
-color12 #ffffff
-color13 #888888
-color14 #777777
-color15 #f0e6d3
+color8  $COLOR8
+color9  $COLOR9
+color10 $COLOR10
+color11 $COLOR11
+color12 $SELECTION_BG
+color13 $COLOR13
+color14 $COLOR14
+color15 $COLOR15
