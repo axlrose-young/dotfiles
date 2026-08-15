@@ -21,12 +21,16 @@ wireplumber \
 brightnessctl \
 feh
 
-# Xinitrc setup 
+# Home dir setup symlinks
 ln -sf ~/dotfiles/xinit/.xinitrc ~/.xinitrc
 ln -sf ~/dotfiles/bash/.bashrc ~/.bashrc
 ln -sf ~/dotfiles/vim/.vimrc ~/.vimrc
 
+# .Config dir setup symlinks
 mkdir -p ~/.config
 ln -sf ~/dotfiles/dunst ~/.config/dunst
 ln -sf ~/dotfiles/kitty ~/.config/kitty
 ln -sf ~/dotfiles/rofi ~/.config/rofi
+
+cd ~/dotfiles/src/dwm && sudo make clean install
+cd ~/dotfiles/src/slstatus && sudo make clean install
