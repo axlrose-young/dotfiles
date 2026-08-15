@@ -67,7 +67,7 @@ static const char unknown_str[] = "n/a";
 static const struct arg args[] = {
 	/* function format          argument */
 	{ run_command,   "%s  ",           "bluetooth-display.sh" }, 
-	{ run_command,   "%s NET  ",           "wifi-display.sh" }, 
+	{ run_command,   "%s NET  ",       "wifi-display.sh" }, 
 	{ run_command,   "%s  ",           "brightness-display.sh" }, 
 	{ run_command,   "%s  ",           "battery-display.sh"},
 	{ run_command,   "%s  ",           "volume-display.sh"},
