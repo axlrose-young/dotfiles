@@ -17,8 +17,9 @@ sudo pacman -S --noconfirm --needed bash \
 	networkmanager \
 	bluetui \
 	bluetoothctl \
-	wpctl \
-	brightnessctl 
+	wireplumber \
+	brightnessctl \
+	feh
 
 # Xinitrc setup 
 ln -s ~/dotfiles/xinit/.xinitrc ~/.xinitrc
