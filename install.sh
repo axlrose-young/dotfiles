@@ -32,3 +32,6 @@ mkdir -p ~/.config
 ln -sf ~/dotfiles/dunst ~/.config/dunst
 ln -sf ~/dotfiles/kitty ~/.config/kitty
 ln -sf ~/dotfiles/rofi ~/.config/rofi
+
+echo -e "\n\nDotfiles setup\n"
+echo -e "Logout for changes to take place\n"
