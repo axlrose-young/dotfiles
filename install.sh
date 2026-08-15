@@ -16,11 +16,10 @@ sudo pacman -S --noconfirm --needed bash \
 	maim \
 	networkmanager \
 	bluetui \
-	bluetoothctl \
+	bluez-utils \
 	wireplumber \
 	brightnessctl \
 	feh
 
 # Xinitrc setup 
-rm ~/.xinitrc
-ln -s ~/dotfiles/xinit/.xinitrc ~/.xinitrc
+ln -sf ~/dotfiles/xinit/.xinitrc ~/.xinitrc
