@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install packages needed
-sudo pacman -S --noconfirm --needed bash \ 
+sudo pacman -S --noconfirm --needed bash \
 xorg-server \
 xorg-xinit \
 vim \
