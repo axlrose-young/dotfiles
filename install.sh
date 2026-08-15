@@ -19,3 +19,6 @@ sudo pacman -S --noconfirm --needed bash \
 	bluetoothctl \
 	wpctl \
 	brightnessctl 
+
+# Xinitrc setup 
+ln -s ~/dotfiles/xinit/.xinitrc ~/.xinitrc
