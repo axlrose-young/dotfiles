@@ -21,6 +21,8 @@ wireplumber \
 brightnessctl \
 feh
 
+fc-cache -fv
+
 # Home dir setup symlinks
 ln -sf ~/dotfiles/xinit/.xinitrc ~/.xinitrc
 ln -sf ~/dotfiles/bash/.bashrc ~/.bashrc

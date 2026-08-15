@@ -1,5 +1,5 @@
 picom &
 dunst &
-feh --bg-fill ~/Downloads/'Untitled design(2)'.png
+feh --bg-fill ~/dotfiles/themes/mono/default
 slstatus &
 exec dwm
