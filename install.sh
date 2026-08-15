@@ -27,3 +27,6 @@ ln -sf ~/dotfiles/bash/.bashrc ~/.bashrc
 ln -sf ~/dotfiles/vim/.vimrc ~/.vimrc
 
 mkdir -p ~/.config
+ln -sf ~/dotfiles/dunst ~/.config/dunst
+ln -sf ~/dotfiles/kitty ~/.config/kitty
+ln -sf ~/dotfiles/rofi ~/.config/rofi
