@@ -10,12 +10,6 @@ alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
 # added configs
-
-# Removes duplicate path export
-if [[ :"$PATH": != *"$HOME/dotfiles/scripts"* ]];then
-	export PATH="$HOME/dotfiles/scripts:$PATH"
-fi
-
 export EDITOR=vim
 
 alias v='vim'
