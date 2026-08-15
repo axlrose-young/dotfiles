@@ -1,6 +1,6 @@
 #!/bin/bash
 
-val=$(< /sys/class/backlight/nvidia_0/brightness)
+val=$(brightnessctl g)
 
 if [[ val -gt 60 ]]; then
 	printf "󰃚 %s" "$val" 
