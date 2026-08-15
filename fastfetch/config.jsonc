@@ -1,0 +1,25 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+    "logo": {
+	"type": "builtin",
+        "source": "DarkOS"
+    },
+    "display": {
+        "separator": " "
+    },
+    "modules": [
+        "title",
+        "separator",
+        { "type": "os", "key": "󰣇 " },
+        { "type": "kernel", "key": " " },
+        { "type": "uptime", "key": "󱑂 " },
+        { "type": "packages", "key": "󰏖 " },
+        { "type": "shell", "key": " " },
+        { "type": "wm", "key": " " },
+        { "type": "terminal", "key": " " },
+        { "type": "cpu", "key": " " },
+        { "type": "gpu", "key": " " },
+        { "type": "memory", "key": " " },
+        "break"
+    ]
+}
