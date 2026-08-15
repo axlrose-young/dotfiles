@@ -22,4 +22,5 @@ sudo pacman -S --noconfirm --needed bash \
 	feh
 
 # Xinitrc setup 
+rm ~/.xinitrc
 ln -s ~/dotfiles/xinit/.xinitrc ~/.xinitrc
