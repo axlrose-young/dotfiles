@@ -23,3 +23,7 @@ feh
 
 # Xinitrc setup 
 ln -sf ~/dotfiles/xinit/.xinitrc ~/.xinitrc
+ln -sf ~/dotfiles/bash/.bashrc ~/.bashrc
+ln -sf ~/dotfiles/vim/.vimrc ~/.vimrc
+
+mkdir -p ~/.config
