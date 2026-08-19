@@ -5,6 +5,7 @@ sudo pacman -S --noconfirm --needed bash \
 xorg-server \
 xorg-xinit \
 base-devel \
+fastfetch \
 vim \
 kitty \
 ttf-jetbrains-mono-nerd \
