@@ -17,5 +17,7 @@ alias ll='ls -lah'
 alias yy='yazi'
 alias gs='git status'
 alias x='startx'
+alias ff='fastfetch'
+alias c='clear'
 
 eval "$(starship init bash)"
