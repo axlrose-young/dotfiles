@@ -38,5 +38,9 @@ ln -sf ~/dotfiles/kitty ~/.config/kitty
 ln -sf ~/dotfiles/rofi ~/.config/rofi
 ln -sf ~/dotfiles/fastfetch/config.jsonc ~/.config/fastfetch/config.jsonc
 
+# BUilding wm and topbar
+cd ~/dotfiles/src/dwm && sudo make clean install
+cd ~/dotfiles/src/slstatus && sudo make clean install
+
 echo -e "\n\nDotfiles setup\n"
 echo -e "Logout for changes to take place\n"
