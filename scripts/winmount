@@ -1,0 +1,19 @@
+#!/bin/bash
+
+UUID="E8D49378D49347A8"
+if mountpoint -q /mnt/win; then
+	echo "Aready mounted"
+
+	read -p "Want to unmount it [Y/n] ?" answer
+	if [[ "$answer" == "y" ]];then
+		echo "Unmounting..."
+		sudo umount /mnt/win
+	elif [[ "$answer" == "n" ]];then
+		echo "Not unmounting"
+	else 
+		echo "Unmounting..."
+		sudo umount /mnt/win
+	fi
+else
+	sudo mount -t ntfs-3g --uuid ${UUID} /mnt/win
+fi
