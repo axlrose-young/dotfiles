@@ -1,0 +1,18 @@
+#!/bin/bash
+
+DIR=$HOME/Downloads/Books
+
+declare -a BASENAME=()
+
+for name in "$DIR"/* 
+do
+	name=$(basename "${name}")
+	BASENAME+=("${name}")
+done
+
+select file in "${BASENAME[@]}"
+do 
+	zathura ${DIR}/${file} &
+	break
+done
+
