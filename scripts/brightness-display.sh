@@ -3,7 +3,7 @@
 val=$(brightnessctl g)
 
 if [[ val -gt 60 ]]; then
-	printf "󰃚 %s" "$val" 
+	printf "󰽢 %s" "$val" 
 else
-	printf "󰃜 %s" "$val"
+	printf "󰽧 %s" "$val"
 fi
