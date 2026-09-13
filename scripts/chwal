@@ -1,0 +1,29 @@
+#!/bin/bash
+
+WALLDIR="$HOME/pictures/wallpapers/"
+wallpaper=$(nsxiv -to ${WALLDIR})
+
+if [[ -z "$wallpaper" ]];then
+	echo "Exiting"
+	exit 
+fi
+
+feh --bg-fill ${wallpaper}
+
+# Put it in .cache for xinitrc to use
+CWALL="$HOME/.cache/current-wallpaper"
+mkdir -p "$CWALL"
+cp $wallpaper "$CWALL/current.jpg"
+
+wal -i ${wallpaper}
+
+DWMDIR="$HOME/dotfiles/src/dwm/"
+
+if cd "$DWMDIR";then
+	echo "changed to dwm"
+	sudo make clean install
+	kill -HUP $(pidof dwm)
+else 
+	echo
+	echo "dir: $DWMDIR does not exist"
+fi
