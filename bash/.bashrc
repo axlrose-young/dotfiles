@@ -19,5 +19,7 @@ alias gs='git status'
 alias x='startx'
 alias ff='fastfetch'
 alias c='clear'
+alias pac='pacman --color=always'
 
 eval "$(starship init bash)"
+eval "$(zoxide init bash)"

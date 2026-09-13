@@ -308,3 +308,8 @@ c.colors.webpage.darkmode.policy.page = "smart"
 
 # Background used when a webpage doesn't specify one.
 c.colors.webpage.bg = BG
+
+
+# Keybinds
+config.bind('J', 'tab-prev')
+config.bind('K', 'tab-next')
