@@ -1,4 +1,4 @@
-@theme "theme.rasi"
+@import "~/.cache/wal/colors-rofi-dark.rasi"
 
 configuration {
 /*	modes: "window,drun,run,ssh";*/
@@ -168,4 +168,75 @@ configuration {
       directories-first: true;
       sorting-method:    "name";
   }
+}
+window {
+    width: 40%;
+    location: center;
+    anchor: center;
+
+    background-color: @normal-background;
+    border: 1px;
+    border-color: @active-background;
+
+    padding: 12px;
+}
+
+mainbox {
+    background-color: @normal-background;
+    spacing: 10px;
+}
+
+inputbar {
+    background-color: @normal-background;
+    text-color: @normal-foreground;
+
+    padding: 8px;
+    spacing: 8px;
+
+    children: [ prompt, entry ];
+}
+
+prompt {
+    background-color: inherit;
+    text-color: @normal-foreground;
+}
+
+entry {
+    background-color: inherit;
+    text-color: @normal-foreground;
+    placeholder-color: #8a9293;
+}
+
+listview {
+    background-color: @normal-background;
+    columns: 1;
+    lines: 8;
+    spacing: 2;
+    scrollbar: false;
+}
+
+element {
+    background-color: @normal-background;
+    text-color: @normal-foreground;
+    padding: 6px;
+}
+
+element normal.normal {
+    background-color: @normal-background;
+    text-color: @normal-foreground;
+}
+
+element selected.normal {
+    background-color: @active-foreground;
+    text-color: @active-foreground;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+}
+
+element-icon {
+    background-color: inherit;
+    size: 20px;
 }
