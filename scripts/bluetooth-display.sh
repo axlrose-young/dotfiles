@@ -6,7 +6,7 @@ num=$(awk '{print $2}' <<< "$dev")
 info=$(awk -F ":" '{print $2}' <<< $(bluetoothctl info $num | grep -i "name"))
 
 if [ "$dev" != "" ]; then
-	printf "󰂯%s" "$info"
+	printf " 󰂯%s" "$info"
 else 
-	printf "󰂲"
+	printf " 󰂲"
 fi

@@ -2,7 +2,7 @@
 
 configuration {
 /*	modes: "window,drun,run,ssh";*/
-/*	font: "mono 12";*/
+	font: "JetBrains Mono Nerd 12";
 /*	location: 0;*/
 /*	yoffset: 0;*/
 /*	xoffset: 0;*/
@@ -176,13 +176,12 @@ window {
 
     background-color: @normal-background;
     border: 1px;
-    border-color: @active-background;
 
     padding: 12px;
 }
 
 mainbox {
-    background-color: @normal-background;
+    children: [inputbar,listview];
     spacing: 10px;
 }
 
@@ -197,46 +196,41 @@ inputbar {
 }
 
 prompt {
-    background-color: inherit;
     text-color: @normal-foreground;
 }
 
 entry {
-    background-color: inherit;
     text-color: @normal-foreground;
-    placeholder-color: #8a9293;
 }
 
 listview {
-    background-color: @normal-background;
     columns: 1;
-    lines: 8;
-    spacing: 2;
+    lines: 7;
+    spacing: 2px;
     scrollbar: false;
 }
 
 element {
-    background-color: @normal-background;
-    text-color: @normal-foreground;
-    padding: 6px;
+    padding: 8px;
+    border-radius: 5px;
 }
 
-element normal.normal {
+element.normal.normal {
     background-color: @normal-background;
     text-color: @normal-foreground;
 }
 
-element selected.normal {
-    background-color: @active-foreground;
+element.alternate.normal {
+    background-color: @normal-background;
+    text-color: @normal-foreground;
+}
+
+element.selected.normal {
+    background-color: @active-background;
     text-color: @active-foreground;
 }
 
 element-text {
     background-color: inherit;
     text-color: inherit;
-}
-
-element-icon {
-    background-color: inherit;
-    size: 20px;
 }
