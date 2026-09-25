@@ -728,7 +728,7 @@ drawbar(Monitor *m)
 			urg |= c->tags;
 	}
 	x = 0;
-	for (i = 0; i < LENGTH(tags); i++) {
+	for (i = 0; i < LENGTH(tags); i++) {	
 		w = TEXTW(tags[i]);
 		drw_setscheme(drw, scheme[m->tagset[m->seltags] & 1 << i ? SchemeSel : SchemeNorm]);
 		drw_text(drw, x, 0, w, bh, lrpad / 2, tags[i], urg & 1 << i);
@@ -748,7 +748,6 @@ drawbar(Monitor *m)
 
 			// Displays only window name
 			char* last = strrchr(m->sel->name, ' ');
-			last ? last + 1 : m->sel->name;
 
 			drw_text(drw, x, 0, w, bh, lrpad / 2, last, 0);
 			if (m->sel->isfloating)
