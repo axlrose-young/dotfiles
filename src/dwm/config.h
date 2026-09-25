@@ -13,6 +13,7 @@ static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#f0e6d3";
 static const char col_gray4[]       = "#f0e6d3";
 static const char col_cyan[]        = "#cccccc";
+
 #include "/home/axlrose/.cache/wal/colors-wal-dwm.h"
 //static const char *colors[][3]      = {
 //              	fg         bg         border   
