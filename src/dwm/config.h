@@ -74,7 +74,6 @@ static const char scratchpadname[]  = "scratchpad";
 static const char *scratchpadcmd[]  = {"kitty","--title",scratchpadname,NULL};
 
 /* Custom commands */
-static const char *roficmd[] = { "rofi","-show","drun",NULL }; 
 // screenshot 
 static const char *ss_full[] = { "screenshot.sh","full", NULL };
 static const char *ss_select[] = {"screenshot.sh","select", NULL }; 
@@ -85,7 +84,7 @@ static const char *bri_dec[] = {"brightness.sh","down", NULL };
 static const char *vol_inc[] = {"volume.sh","up", NULL }; 
 static const char *vol_dec[] = {"volume.sh","down", NULL }; 
 static const char *vol_mute[] = {"volume.sh","mute", NULL }; 
-// rofi power menu
+// dmenu power menu
 static const char *powermenu[] = {"powermenu.sh", NULL }; 
 // bluetooth
 static const char *bluetooth[] = {"kitty","-e","bluetui", NULL }; 
@@ -102,7 +101,6 @@ static const Key keys[] = {
 	{ 0,                            XK_F3,     spawn,          {.v = vol_inc } },
 	{ 0,                            XK_F2,     spawn,          {.v = vol_dec } },
 	{ 0,                            XK_F1,     spawn,          {.v = vol_mute } },
-	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,             		XK_grave,  togglescratch,  {.v = scratchpadcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
