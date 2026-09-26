@@ -18,12 +18,23 @@ cp $wallpaper "$CWALL/current.jpg"
 wal -i ${wallpaper}
 
 DWMDIR="$HOME/dotfiles/src/dwm/"
+DMENUDIR="$HOME/dotfiles/src/dmenu"
+DMENUCONF="$HOME/dotfiles/src/dmenu/config.h"
 
 if cd "$DWMDIR";then
-	echo "changed to dwm"
-	sudo make clean install
+	sudo make clean install > /dev/null 2>&1
 	kill -HUP $(pidof dwm)
 else 
 	echo
 	echo "dir: $DWMDIR does not exist"
+	echo "Could not compile dwm"
+fi
+
+if cd "$DMENUDIR";then
+	rm -f "$DMENUCONF"
+	sudo make clean install > /dev/null 2>&1
+else
+	echo 
+	echo "dir:$DMENUDIR does not exist"
+	echo "Could not recompile dmenu"
 fi

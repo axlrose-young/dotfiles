@@ -10,19 +10,23 @@ static const int vertpad            = 10;        /* 0 vertical padding */
 static const int sidepad            = 10;        /* 0 horizontal padding */
 
 static const char *fonts[]          = { "JetBrainsMono Nerd Font:size=9" };
-static const char dmenufont[]       = "monospace:size=10";
+/*
+static const char dmenufont[]       = "JetBrainsMono Nerd Font:size=10";
 static const char col_gray1[]       = "#000000";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#f0e6d3";
 static const char col_gray4[]       = "#f0e6d3";
 static const char col_cyan[]        = "#cccccc";
+*/
 
 #include "/home/axlrose/.cache/wal/colors-wal-dwm.h"
-//static const char *colors[][3]      = {
-//              	fg         bg         border   
-//	[SchemeNorm] = { "#f0e6d3", "#000000", "#000000" },
-//	[SchemeSel]  = { "#cccccc", "#000000",  "#f0e6d3"  },
-//};
+/*
+static const char *colors[][3]      = {
+              	fg         bg         border   
+	[SchemeNorm] = { "#f0e6d3", "#000000", "#000000" },
+	[SchemeSel]  = { "#cccccc", "#000000",  "#f0e6d3"  },
+};
+*/
 
 /* tagging */
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9"};
@@ -64,7 +68,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
+static const char *dmenucmd[] = { "/usr/local/bin/dmenu_run", NULL };
 static const char *termcmd[]  = { "kitty", NULL };
 static const char scratchpadname[]  = "scratchpad";
 static const char *scratchpadcmd[]  = {"kitty","--title",scratchpadname,NULL};
