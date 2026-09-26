@@ -74,7 +74,7 @@ configuration {
 /*	display-windowcd: ;*/
 /*	display-run: ;*/
 /*	display-ssh: ;*/
-	display-drun: ">";
+	display-drun: "";
 /*	display-combi: ;*/
 /*	display-keys: ;*/
 /*	display-filebrowser: ;*/
@@ -175,7 +175,7 @@ window {
     anchor: center;
 
     background-color: @normal-background;
-    border: 1px;
+    border: 0px;
 
     padding: 12px;
 }
