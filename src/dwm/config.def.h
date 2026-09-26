@@ -74,6 +74,7 @@ static const char scratchpadname[]  = "scratchpad";
 static const char *scratchpadcmd[]  = {"kitty","--title",scratchpadname,NULL};
 
 /* Custom commands */
+
 // screenshot 
 static const char *ss_full[] = { "screenshot.sh","full", NULL };
 static const char *ss_select[] = {"screenshot.sh","select", NULL }; 
