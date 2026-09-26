@@ -88,7 +88,7 @@ static const char *bluetooth[] = {"kitty","-e","bluetui", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_d,      spawn,          {.v = roficmd } },
+	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_p,      spawn,          {.v = powermenu } },
 	{ MODKEY,                       XK_bracketleft,      spawn,{.v = bluetooth } },
 	{ 0,                            XK_Print,  spawn,          {.v = ss_full } },

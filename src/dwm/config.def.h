@@ -10,7 +10,7 @@ static const int vertpad            = 10;        /* 0 vertical padding */
 static const int sidepad            = 10;        /* 0 horizontal padding */
 
 static const char *fonts[]          = { "JetBrainsMono Nerd Font:size=9" };
-static const char dmenufont[]       = "monospace:size=10";
+static const char dmenufont[]       = "JetBrainsMono Nerd Font:size=10";
 static const char col_gray1[]       = "#000000";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#f0e6d3";
@@ -18,6 +18,7 @@ static const char col_gray4[]       = "#f0e6d3";
 static const char col_cyan[]        = "#cccccc";
 
 #include "/home/axlrose/.cache/wal/colors-wal-dwm.h"
+
 //static const char *colors[][3]      = {
 //              	fg         bg         border   
 //	[SchemeNorm] = { "#f0e6d3", "#000000", "#000000" },
@@ -88,7 +89,7 @@ static const char *bluetooth[] = {"kitty","-e","bluetui", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_d,      spawn,          {.v = roficmd } },
+	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_p,      spawn,          {.v = powermenu } },
 	{ MODKEY,                       XK_bracketleft,      spawn,{.v = bluetooth } },
 	{ 0,                            XK_Print,  spawn,          {.v = ss_full } },
