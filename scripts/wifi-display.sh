@@ -1,11 +1,9 @@
 #!/bin/bash
 
-stat=$(nmcli -t dev status | grep -m 1 "wlo1" | awk -F ":" '{print $3}')
+SIGNAL=$(nmcli -t -f IN-USE,SIGNAL dev wifi | grep '^\*' | cut -d: -f2)
 
-if [ "$stat" == "connected" ]; then
-	printf "󰖩 "  
-elif [ "$stat" == "disconnected" ]; then
-	printf "󱚼 "
-else 
-	printf "󱚾 "
+if [[ -n "$SIGNAL" ]]; then
+    printf "  %s%%" "$SIGNAL"
+else
+    printf "  -"
 fi

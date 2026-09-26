@@ -1,3 +1,3 @@
 #!/bin/bash
 
-date +'%a %d %b %l:%M %p'
+date +'%a %d %b %H:%M'
