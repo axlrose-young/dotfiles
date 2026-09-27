@@ -8,7 +8,7 @@
 #define MAX_BLOCK_OUTPUT_LENGTH 45
 
 // Control whether blocks are clickable.
-#define CLICKABLE_BLOCKS 0
+#define CLICKABLE_BLOCKS 1
 
 // Control whether a leading delimiter should be prepended to the status.
 #define LEADING_DELIMITER 0
@@ -19,9 +19,9 @@
 // Define blocks for the status feed as X(icon, cmd, interval, signal).
 #define BLOCKS(X)             \
     X(" ","music-display.sh", 1, 1)  \
-    X("", "volume-display.sh", 3, 1)  \
+    X("", "volume-display.sh", 3, 2)  \
     X("", "battery-display.sh", 30, 3)  \
-    X("", "wifi-display.sh", 30, 4)  \
-    X("", "date-display.sh", 60, 5)  
+    X("", "wifi-display.sh", 30, 0)  \
+    X("", "date-display.sh", 60, 0)  
 
 #endif  // CONFIG_H

@@ -13,7 +13,7 @@ SPOTIFY="spotify.com"
 
 if [[ "$URL" == *"$SPOTIFY"* ]];then
 	# Spotify playing
-	ARTIST="$(playerctl metadata --format {{artist}})"
+	ARTIST="$(playerctl metadata --format {{artist}} | awk -F, '{print $1}')"
 	TITLE="$(playerctl metadata --format {{title}})"
 
 	echo "󰝚 ${ARTIST} - ${TITLE}"
