@@ -74,6 +74,7 @@ static const char scratchpadname[]  = "scratchpad";
 static const char *scratchpadcmd[]  = {"kitty","--title",scratchpadname,NULL};
 
 /* Custom commands */
+
 // screenshot 
 static const char *ss_full[] = { "screenshot.sh","full", NULL };
 static const char *ss_select[] = {"screenshot.sh","select", NULL }; 
@@ -88,12 +89,16 @@ static const char *vol_mute[] = {"volume.sh","mute", NULL };
 static const char *powermenu[] = {"powermenu.sh", NULL }; 
 // bluetooth
 static const char *bluetooth[] = {"kitty","-e","bluetui", NULL }; 
+//lockscreen
+static const char *lockscreen[] = {"lockscreen.sh", NULL }; 
+
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_p,      spawn,          {.v = powermenu } },
 	{ MODKEY,                       XK_bracketleft,      spawn,{.v = bluetooth } },
+	{ MODKEY,                       XK_bracketright,      spawn,{.v = lockscreen } },
 	{ 0,                            XK_Print,  spawn,          {.v = ss_full } },
 	{ 0|ShiftMask,                  XK_Print,  spawn,          {.v = ss_select } },
 	{ 0,                            XK_F6,     spawn,          {.v = bri_inc } },

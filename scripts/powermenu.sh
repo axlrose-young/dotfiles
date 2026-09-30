@@ -7,8 +7,8 @@ confirm(){
 }
 
 case $CHOICE in
-	"Lock screen") # Yet to implemet lock screen
-		echo "locks screen"
+	"Lock screen")
+		lockscreen.sh
 		;;
 	"Exit dwm")
 		killall dwm
